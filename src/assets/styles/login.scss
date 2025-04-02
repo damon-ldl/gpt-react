@@ -1,0 +1,91 @@
+.login {
+  height: 100vh;
+  display: flex;
+  .background {
+      flex: 4;
+      background-image: url('../../assets/image/bg.png');
+      background-position: center;
+      background-size: cover;
+  }
+  .loginPage {
+      flex: 6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .loginBox {
+          width: 450px;
+      }
+      .loginIcon{
+        width: 30px;
+        margin-right: 10px;
+        margin-top: -2px;
+      }
+      .title {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+      }
+      .subtitle {
+          display: flex;
+          justify-content: center;
+          color: #c1c1c1;
+          margin-bottom: 30px;
+      }
+      h1 {
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+          color: rgba(26, 102, 255, 1);
+      }
+      h2 {
+          font-size: 14px;
+      }
+      .form {
+          .ant-input, .ant-input-password {
+              background-color: rgba(255, 255, 255, 0);
+              border-color: #c1c1c1;
+              height: 38px;
+          }
+          .ant-input::-webkit-input-placeholder {
+              color: #c1c1c1;
+          }
+          .ant-input-password .ant-input {
+              margin-top: -2px;
+          }
+          .ant-input-password-icon.anticon, .ant-input-password-icon.anticon:hover {
+              color: #c1c1c1;
+          }
+          .btn {
+              float: right;
+          }
+          .loginBtn, .registeredBtn {
+              height: 38px;
+              width: 100px;
+          }
+          .loginBtn {
+              margin-right: 20px;
+          }
+          .ant-input-affix-wrapper {
+              background-color: transparent !important;
+              border-color: #c1c1c1;
+              padding: 0;
+          }
+          .site-form-item-icon {
+              color: #c1c1c1;
+          }
+          .usernameinput {
+              height: 38px;
+              padding: 0 11px;
+          }
+      }
+      .loginfooter{
+        color: #c1c1c1;
+        font-size: 14px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 10px;
+      }
+  }
+}
